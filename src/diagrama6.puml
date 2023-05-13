@@ -1,0 +1,13 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+top to bottom direction
+
+Actor "Cliente Bancario" as bancario
+Actor "Cliente Corporativo" as corporativo
+Actor "Cliente Normal" as normal
+
+bancario <|-- corporativo
+bancario <|-- normal
+
+@enduml
