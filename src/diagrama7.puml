@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+actor Empleado
+actor Administrador
+
+rectangle "Empresa Pedidos" {
+}
+
+Empleado -- "Empresa Pedidos"
+"Empresa Pedidos" -- Administrador
+
+@enduml
