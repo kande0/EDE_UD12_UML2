@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+rectangle Sistema {
+    (Caso de uso1)
+    (Caso de uso2)
+    (Caso de uso3)
+}
+
+Actor1 -- (Caso de uso1)
+Actor1 -- (Caso de uso2)
+Actor1 -- (Caso de uso3)
+
+(Caso de uso1) -- Actor2
+(Caso de uso3) -- Actor2
+
+note right of Sistema : entorno
+note left of (Caso de uso3): Comunicación
+
+@enduml
