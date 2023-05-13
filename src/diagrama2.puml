@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+rectangle Biblioteca {
+    (Reservar Libro)
+    (Prestar Libro)
+    (Devolver Libro)
+    (Actualizar Catálogo)
+}
+
+Socio -- (Reservar Libro)
+Socio -- (Prestar Libro)
+Socio -- (Devolver Libro)
+
+(Prestar Libro) -- Bibliotecario
+(Actualizar Catálogo) -- Bibliotecario
+
+@enduml
