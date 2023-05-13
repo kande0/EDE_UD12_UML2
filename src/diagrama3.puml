@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+Bibliotecario --> (Baja Socio)
+
+(Baja Socio) ..> (Buscar Socio):<<include>>
+
+@enduml
